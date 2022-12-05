@@ -1,0 +1,117 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    
+    body {
+        @apply font-open
+    }
+
+    .max-content {
+        @apply max-w-[1536px] mx-auto
+    }
+    h2 {
+        @apply mt-2 text-28 leading-10 font-black capitalize text-darkblack text-center font-open
+    }
+}
+
+@layer components {
+    .container {
+        @apply mx-auto
+    }
+    .header {
+        @apply bg-[url('/images/header-bg.png')] bg-no-repeat object-cover h-full bg-center relative transition-all delay-700
+    }
+    .section-heading {
+        @apply relative pt-5 mt-0 mb-60
+    }
+    .sub-heading {
+        @apply text-xs uppercase font-semibold text-gray
+    }
+
+}
+
+@layer utilities {
+
+    .anime {
+      transition: all .5s ease 0s;
+    }
+    .header.header-sticky {
+        @apply min-h-80 xl:min-h-110 delay-700 anime
+    }
+    .left-banner {
+        @apply relative mt-5 text-darkblack font-black leading-74 mb-10 font-open after:absolute after:content-[''] after:w-[214px] after:h-[429px] after:bg-[url('/images/banner-left-dec.png')] after:left-0 lg:after:left-[-50%] after:mb-[-267px] after:bottom-[-240px] after:z-[-1] after:bg-no-repeat
+    }
+    .right-banner {
+        @apply  after:w-[378px] after:h-[378px] after:right-[-11%] after:z-[-1] after:absolute after:content-[''] after:bg-[url('/images/banner-right-dec.png')] after:top-96 lg:after:top-0 after:bg-no-repeat
+    }
+
+    .custom-gradient {
+        background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+    }
+    .main-gradient-btn {
+        @apply text-xs w-max py-3 px-30 rounded-md text-white font-medium font-open uppercase hover:opacity-90 lgscreen:mx-auto custom-gradient
+    }
+    .nav li a {
+        @apply hover:opacity-90
+    }
+    h2 span {
+        @apply text-purple
+    }
+
+    .service .slide-content img {
+        @apply flex mx-auto
+    }
+    .service .slide-content {
+        @apply text-center m-15 py-50 px-5 hover:shadow-custom
+    }
+    .service .slide-content .content h3 {
+        @apply my-15 font-extrabold text-xl
+    }
+    .service .slide-content .content p {
+        @apply text-sm font-open leading-25
+    }
+    .service .swiper-pagination-bullet-active, .testimonials .swiper-pagination-bullet-active {
+        @apply bg-purple
+    }
+    .service .swiper-pagination-bullet, .testimonials .swiper-pagination-bullet {
+        @apply w-10 h-10 mt-50
+    }
+
+    .courses::before {
+        @apply before:absolute before:content-[''] before:bg-[url('/images/our-courses-left-dec.png')] before:left-[-7%] before:top-[-140px] before:w-[291px] before:h-[231px] before:z-10
+    }
+
+    .courses::after {
+        position: absolute;
+        content: '';
+        background-image: url(/images/our-courses-right-dec.png);
+        right: -7%;
+        top: -140px;
+        width: 291px;
+        height: 231px;
+        z-index: 1;
+    }
+
+    .testimonials {
+        @apply before:absolute before:content-[''] before:bg-[url('/images/testimonials-left-dec.png')] before:left-[-10%] before:top-[-140px] before:w-[593px] before:h-[352px] before:z-[-1]
+    }
+    .testimonials {
+        @apply after:absolute after:content-[''] after:bg-[url('/images/testimonials-right-dec.png')] after:right-[-10%] after:bottom-[-140px] after:w-[593px] after:h-[352px] after:z-10
+    }
+
+    .sale {
+        @apply bg-[url('/images/cta-bg.png')] bg-no-repeat bg-cover
+    }
+    .white-btn {
+        @apply text-13 text-purple bg-white py-3 px-30 rounded-md uppercase anime w-max hover:bg-opacity-80
+    }
+
+    .contact {
+        @apply bg-[url('https://templatemo.com/templates/templatemo_573_eduwell/assets/images/footer-bg.png')] h-screen w-full bg-cover
+    }
+    
+}
