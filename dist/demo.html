@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <title>EduWell</title>
+</head>
+
+<style>
+    /* Styles required only for the example above */
+    .scrollspy-example {
+        position: relative;
+        height: 200px;
+        overflow: auto;
+    }
+</style>
+
+<body>
+
+
+    <div class="grid grid-cols-3">
+        <div class="col-span-2">
+            <div data-bs-spy="scroll" data-bs-target="#scrollspy1" data-bs-offset="500" class="scrollspy-example">
+                <section id="banner">
+                    <h3 class="text-xl font-semibold pt-5 pb-3">Section 1</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                        minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                        quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                        minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                        quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                    </p>
+                </section>
+                <section id="example-2">
+                    <h3 class="text-xl font-semibold pt-5 pb-3">Section 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                        minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                        quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                        minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                        quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                    </p>
+                </section>
+                <section id="example-3">
+                    <h3 class="text-xl font-semibold pt-5 pb-3">Section 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                        minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                        quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                        minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                        quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                    </p>
+                </section>
+                <section id="example-4">
+                    <h3 class="text-xl font-semibold pt-5 pb-3">Section 4</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                        minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                        quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                        minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                        quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                    </p>
+                </section>
+            </div>
+        </div>
+
+        <div>
+            <!-- Scrollspy -->
+            <div id="scrollspy1" class="sticky-top pl-3 text-sm">
+                <ul class="nav nav-pills menu-sidebar">
+                    <li class="py-1">
+                        <a class="nav-link" href="#banner">Section 1</a>
+                    </li>
+                    <li class="py-1">
+                        <a class="nav-link" href="#example-2">Section 2</a>
+                    </li>
+                    <li class="py-1">
+                        <a class="nav-link" href="#example-3">Section 3</a>
+                        <ul class="nav flex-column pl-3">
+                            <li class="py-1">
+                                <a class="nav-link" href="#example-sub-A">Subsection A</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#example-sub-B">Subsection B</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="py-1">
+                        <a class="nav-link" href="#example-4">Section 4</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Scrollspy -->
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+</body>
+
+</html>

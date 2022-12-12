@@ -20,33 +20,47 @@
 
 @layer components {
     .container {
-        @apply mx-auto
+        @apply mx-auto lgscreen:px-5
     }
-    .header {
-        @apply bg-[url('/images/header-bg.png')] bg-no-repeat object-cover h-full bg-center relative transition-all delay-700
+    .heder-menu {
+        @apply bg-[url('/images/header-bg.png')] bg-no-repeat object-cover lg:min-h-[110px] h-full bg-center relative transition-all delay-700
     }
     .section-heading {
-        @apply relative pt-5 mt-0 mb-60
+        @apply relative pt-5 mt-0 mb-30 lg:mb-60
     }
     .sub-heading {
         @apply text-xs uppercase font-semibold text-gray
+    }
+
+    .custom-flex {
+        flex: 0 0 auto;
     }
 
 }
 
 @layer utilities {
 
+    .shadow-bg {
+        background:linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+        border-radius: 50%;
+        width: fit-content;
+        padding: 15px;
+    }
+
     .anime {
       transition: all .5s ease 0s;
     }
-    .header.header-sticky {
-        @apply min-h-80 xl:min-h-110 delay-700 anime
+    .tab-fade {
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
     }
+    /* .header.header-sticky {
+        @apply min-h-80 xl:min-h-110 delay-700 anime
+    } */
     .left-banner {
-        @apply relative mt-5 text-darkblack font-black leading-74 mb-10 font-open after:absolute after:content-[''] after:w-[214px] after:h-[429px] after:bg-[url('/images/banner-left-dec.png')] after:left-0 lg:after:left-[-50%] after:mb-[-267px] after:bottom-[-240px] after:z-[-1] after:bg-no-repeat
+        @apply relative mt-5 text-darkblack font-black leading-74 mb-10 font-open after:absolute after:content-[''] after:w-full after:max-w-[214px] after:h-[429px] after:bg-[url('/images/banner-left-dec.png')] lgscreen:after:ml-[-20%] after:left-0 lg:after:left-[-50%] after:mb-[-267px] after:bottom-[-240px] after:z-[-1] after:bg-no-repeat
     }
     .right-banner {
-        @apply  after:w-[378px] after:h-[378px] after:right-[-11%] after:z-[-1] after:absolute after:content-[''] after:bg-[url('/images/banner-right-dec.png')] after:top-96 lg:after:top-0 after:bg-no-repeat
+        @apply after:w-full after:max-w-[378px] after:h-[378px] right-0 bigscreen:after:right-[-11%] after:z-[-1] after:absolute after:content-[''] after:bg-[url('/images/banner-right-dec.png')] after:top-96 lg:after:top-0 after:bg-no-repeat
     }
 
     .custom-gradient {
@@ -81,26 +95,16 @@
         @apply w-10 h-10 mt-50
     }
 
-    .courses::before {
-        @apply before:absolute before:content-[''] before:bg-[url('/images/our-courses-left-dec.png')] before:left-[-7%] before:top-[-140px] before:w-[291px] before:h-[231px] before:z-10
-    }
-
-    .courses::after {
-        position: absolute;
-        content: '';
-        background-image: url(/images/our-courses-right-dec.png);
-        right: -7%;
-        top: -140px;
-        width: 291px;
-        height: 231px;
-        z-index: 1;
+    .courses {
+        @apply before:absolute before:content-[''] before:bg-[url('/images/our-courses-left-dec.png')] before:left-[-7%] before:top-[-140px] before:w-full before:max-w-[291px] before:h-[231px] before:z-[-1]
+        after:absolute after:content-[''] after:bg-[url('/images/our-courses-right-dec.png')] after:right-[-7%] after:top-[-140px] after:w-full after:max-w-[291px] after:h-[231px] z-[-1] 
     }
 
     .testimonials {
-        @apply before:absolute before:content-[''] before:bg-[url('/images/testimonials-left-dec.png')] before:left-[-10%] before:top-[-140px] before:w-[593px] before:h-[352px] before:z-[-1]
+        @apply before:absolute before:content-[''] before:bg-[url('/images/testimonials-left-dec.png')] lg:before:left-[-10%] before:top-[-90px] before:w-full before:max-w-[593px] before:h-[352px] before:z-[-1]
     }
     .testimonials {
-        @apply after:absolute after:content-[''] after:bg-[url('/images/testimonials-right-dec.png')] after:right-[-10%] after:bottom-[-140px] after:w-[593px] after:h-[352px] after:z-10
+        @apply after:absolute after:content-[''] after:bg-[url('/images/testimonials-right-dec.png')] after:right-0 after:bottom-0 lg:after:bottom-[-140px] after:w-full after:max-w-[636px] after:bg-no-repeat after:h-[352px] after:z-[-1]
     }
 
     .sale {
@@ -111,7 +115,31 @@
     }
 
     .contact {
-        @apply bg-[url('https://templatemo.com/templates/templatemo_573_eduwell/assets/images/footer-bg.png')] h-screen w-full bg-cover
+        @apply bg-[url('/images/footer-bg.png')] bg-cover
     }
+
+    .custom-flex ul {
+        @apply tab-fade
+    }
+
+    .span-detail {
+        @apply text-sm font-semibold pr-30 mr-30 border-r-2 border-darkblack
+    }
+
+    .social-icons a{
+        @apply rounded-[50%] bg-white hover:bg-purple text-purple hover:text-white py-10px px-15
+    }
+
+    .tab-box a[aria-selected="true"] {
+        @apply text-purple
+    }
+
+    .scrollspy-example {
+        @apply relative overflow-auto
+        /* position: relative;
+        height: 200px;
+        overflow: auto; */
+    }
+    
     
 }

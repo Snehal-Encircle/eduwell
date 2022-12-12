@@ -5,50 +5,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
     <link rel="stylesheet" href="./dist/output.css" />
     <title>EduWell</title>
 </head>
 
 <body>
-    <header class="header header-sticky bg-header flex items-center justify-around font-open ">
-        <div class="container">
-            <div class="header-row">
-                <div class="main-nav flex justify-between">
-                    <a href="#">
-                        <img src="https://templatemo.com/templates/templatemo_573_eduwell/assets/images/templatemo-eduwell.png"
-                            alt="" />
-                    </a>
-                    <ul
-                        class="nav hidden lg:flex items-center float-right relative z-50 transition-all delay-1000 space-x-16 text-white text-sm">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                    <div class="lg:hidden menu-toggle flex items-center">
-                        <i class="fa fa-bars text-white text-xl" aria-hidden="true"></i>
+    <!-- fixed overflow-hidden top-0 w-full z-50 transition-transform ease-linear -->
+    <header class="header">
+        <div class="heder-menu bg-header flex items-center justify-around font-open">
+            <div class="container">
+                <div class="header-row">
+                    <div class="main-nav flex justify-between">
+                        <a href="index.html">
+                            <img src="/images/logo.png" alt="" />
+                        </a>
+                        <ul
+                            class="nav hidden lg:flex items-center float-right relative z-50 transition-all delay-1000 space-x-16 text-white text-sm">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#service">Service</a></li>
+                            <li><a href="#cource">Courses</a></li>
+                            <li><a href="#page">Pages</a></li>
+                            <li><a href="#testimonial">Testimonials</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                        <div class="lg:hidden menu-toggle flex items-center">
+                            <i class="fa fa-bars text-white text-xl" aria-hidden="true" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
 
-    <section class="banner pt-70 relative max-content">
+    </header>
+    <!-- menu -->
+    <div class="offcanvas offcanvas-top fixed bottom-0 flex flex-col max-w-full bg-white invisible bg-clip-padding shadow-sm outline-none transition duration-300 ease-in-out text-gray-700 top-0 left-0 right-0 border-none h-1/2 max-h-full"
+        tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header flex items-center justify-end px-10 py-10">
+            <button type="button"
+                class="btn-close box-content w-4 h-4 p-2 -my-5 -mr-2 text-black border-none rounded-none focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="fa-solid fa-xmark text-30 font-black"></i></button>
+        </div>
+        <div class="offcanvas-body flex-grow p-4 overflow-y-auto flex justify-center items-center">
+            <ul
+                class="nav flex flex-col items-center z-50 transition-all delay-200 font-open text-sm space-y-5 text-black hover:text-purple">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#cource">Courses</a></li>
+                <li><a href="#page">Pages</a></li>
+                <li><a href="#testimonial">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="banner pt-70 relative max-content" id="home">
         <div class="container">
             <div class="row lg:flex justify-between relative lgscreen:text-center">
-                <div class="left-banner lg:justify-center flex flex-col lg:max-w-[636px]">
+                <div
+                    class="left-banner lg:justify-center flex flex-col lg:max-w-[636px] animate__animated animate__fadeInLeft animate__delay-1s">
                     <h6 class="text-17 font-medium text-gray-400">Welcome To Our School</h6>
                     <h1 class="text-50 lg:text-64 font-black mb-42">
                         Best Place To Learn Graphic <span class="text-purple">Design!</span>
@@ -57,22 +86,23 @@
                         Join Us Now!
                     </a>
                 </div>
-                <div class="right-banner lgscreen:flex lgscreen:justify-center lg:float-right lg:max-w-[516px]">
+                <div
+                    class="right-banner lgscreen:flex lgscreen:justify-center lg:float-right lg:max-w-[516px] animate__animated animate__fadeInRight animate__delay-1s">
                     <img src="/images/banner-right-image.png" alt="">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="service mt-140 max-content">
+    <section class="service mt-140 max-content" id="service">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading animate__animated animate__fadeInUp">
                 <h4 class="sub-heading text-center">OUR Services</h4>
                 <h2>Provided <span>Services</span> </h2>
             </div>
             <div class="swiper serviceSlider">
                 <div class="swiper-wrapper mb-50">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide animate__animated animate__fadeInUp">
                         <div class="slide-content">
                             <div class="img">
                                 <img src="/images/service-icon-01.png" alt="">
@@ -84,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide animate__animated animate__fadeInUp">
                         <div class="slide-content">
                             <div class="img">
                                 <img src="/images/service-icon-02.png" alt="">
@@ -95,7 +125,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide animate__animated animate__fadeInUp">
                         <div class="slide-content">
                             <div class="img">
                                 <img src="/images/service-icon-03.png" alt="">
@@ -106,7 +136,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide animate__animated animate__fadeInUp">
                         <div class="slide-content">
                             <div class="img">
                                 <img src="/images/service-icon-04.png" alt="">
@@ -123,18 +153,179 @@
         </div>
     </section>
 
-    <section class="courses relative mt-140 max-content">
+    <section class="cources-tab mt-140" id="cource">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading animate__animated animate__fadeInUp">
                 <h4 class="sub-heading text-center">OUR COURSES</h4>
                 <h2>What You Can <span>Learn</span> </h2>
                 <p class="text-center mt-30 font-open text-sm leading-25 text-darkgray max-w-[500px] mx-auto">You just
                     think about TemplateMo whenever you need free CSS templates for your business website</p>
             </div>
+            <div class="tab-contents">
+                <div class="tabs lg:flex flex-wrap">
+                    <div class="w-full lg:w-3/12 custom-flex space-y-10">
+                        <ul class="nav nav-tabs flex flex-col flex-wrap list-none space-y-7 animate__animated animate__fadeInUp"
+                            id="tabs-tabVertical" role="tablist">
+                            <li class="tab-box border-3 border-purple text-black rounded-md py-15 px-30"
+                                role="presentation">
+                                <a href="#tab-web" class="text-xl font-bold font-open flex justify-center active"
+                                    id="tab-web-vertical" data-bs-toggle="pill" data-bs-target="#tab-web" role="tab"
+                                    aria-controls="tab-web" aria-selected="true">Web Development</a>
+                            </li>
+                            <li class="tab-box border-3 border-purple tab-fade text-black rounded-md py-15 px-30"
+                                role="presentation">
+                                <a href="#tab-graphic" class="text-xl font-bold font-open flex justify-center"
+                                    id="tabs-profile-tabVertical" data-bs-toggle="pill" data-bs-target="#tab-graphic"
+                                    role="tab" aria-controls="tab-graphic" aria-selected="false">Graphic Design</a>
+                            </li>
+                            <li class="tab-box border-3 border-purple tab-fade text-black rounded-md py-15 px-30"
+                                role="presentation">
+                                <a href="#tab-design" class="text-xl font-bold font-open flex justify-center"
+                                    id="tabs-messages-tabVertical" data-bs-toggle="pill" data-bs-target="#tab-design"
+                                    role="tab" aria-controls="tab-design" aria-selected="false">Web Design</a>
+                            </li>
+                            <li class="tab-box border-3 border-purple tab-fade text-black rounded-md py-15 px-30"
+                                role="presentation">
+                                <a href="#tabs-wordpress" class="text-xl font-bold font-open flex justify-center"
+                                    id="tabs-messages-tabVertical" data-bs-toggle="pill" data-bs-target="#tab-wordpress"
+                                    role="tab" aria-controls="tab-wordpress" aria-selected="false">WordPress</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full lg:w-9/12 flex items-center lgscreen:mt-5 animate__animated animate__fadeInUp">
+                        <div class="tab-content" id="tabs-tabContentVertical">
+                            <div class="tab-pane fade show active" id="tab-web" role="tabpanel"
+                                aria-labelledby="tab-web-vertical">
+                                <ul class="lg:ml-100">
+                                    <li
+                                        class="grid grid-flow-row-dense grid-cols-1 lg:grid-cols-3 grid-rows-1 lg:gap-10">
+                                        <div class="tab-img">
+                                            <img src="/images/courses-01.jpg" alt="" class="w-full h-full object-cover">
+                                        </div>
+                                        <div class="col-span-2 py-5 lg:py-10">
+                                            <h4 class="font-open font-black text-xl mb-25">Creative Graphic Design
+                                            </h4>
+                                            <p class="font-open text-sm leading-25 text-darkgray">
+                                                You are not allowed to redistribute this template ZIP file on any
+                                                other website without a permission from us.
+                                            </p><br>
+                                            <p class="font-open text-sm leading-25 text-darkgray mb-5">
+                                                There are some unethical people on this world copied and reposted
+                                                our templates without any permission from us. Their Karma will hit
+                                                them really hard. Yeah!
+                                            </p>
+                                            <span class="span-detail">36 hours</span>
+                                            <span class="span-detail">4 weeks</span>
+                                            <span class="text-sm font-semibold">3 Certificates</span> <br>
+                                            <div class="btn mt-5">
+                                                <a href="#" class="text-purple font-open text-sm underline">Subscribe
+                                                    Course</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="tab-graphic" role="tabpanel"
+                                aria-labelledby="tabs-profile-tabVertical">
+                                <ul class="lg:ml-100">
+                                    <li
+                                        class="grid grid-flow-row-dense grid-cols-1 lg:grid-cols-3 grid-rows-1 lg:gap-10">
+                                        <div class="tab-img">
+                                            <img src="/images/courses-02.jpg" alt="" class="w-full h-full object-cover">
+                                        </div>
+                                        <div class="col-span-2 py-5 lg:py-10">
+                                            <h4 class="font-open font-black text-xl mb-25">Creative Graphic Design
+                                            </h4>
+                                            <p class="font-open text-sm leading-25 text-darkgray">
+                                                You are not allowed to redistribute this template ZIP file on any
+                                                other website without a permission from us.
+                                            </p><br>
+                                            <p class="font-open text-sm leading-25 text-darkgray mb-5">
+                                                There are some unethical people on this world copied and reposted
+                                                our templates without any permission from us. Their Karma will hit
+                                                them really hard. Yeah!
+                                            </p>
+                                            <span class="span-detail">36 hours</span>
+                                            <span class="span-detail">4 weeks</span>
+                                            <span class="text-sm font-semibold">3 Certificates</span> <br>
+                                            <div class="btn mt-5">
+                                                <a href="#" class="text-purple font-open text-sm underline">Subscribe
+                                                    Course</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="tab-design" role="tabpanel"
+                                aria-labelledby="tabs-profile-tabVertical">
+                                <ul class="lg:ml-100">
+                                    <li
+                                        class="grid grid-flow-row-dense grid-cols-1 lg:grid-cols-3 grid-rows-1 lg:gap-10">
+                                        <div class="tab-img">
+                                            <img src="/images/courses-03.jpg" alt="" class="w-full h-full object-cover">
+                                        </div>
+                                        <div class="col-span-2 py-5 lg:py-10">
+                                            <h4 class="font-open font-black text-xl mb-25">Creative Graphic Design
+                                            </h4>
+                                            <p class="font-open text-sm leading-25 text-darkgray">
+                                                You are not allowed to redistribute this template ZIP file on any
+                                                other website without a permission from us.
+                                            </p><br>
+                                            <p class="font-open text-sm leading-25 text-darkgray mb-5">
+                                                There are some unethical people on this world copied and reposted
+                                                our templates without any permission from us. Their Karma will hit
+                                                them really hard. Yeah!
+                                            </p>
+                                            <span class="span-detail">36 hours</span>
+                                            <span class="span-detail">4 weeks</span>
+                                            <span class="text-sm font-semibold">3 Certificates</span> <br>
+                                            <div class="btn mt-5">
+                                                <a href="#" class="text-purple font-open text-sm underline">Subscribe
+                                                    Course</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="tab-wordpress" role="tabpanel"
+                                aria-labelledby="tabs-profile-tabVertical">
+                                <ul class="lg:ml-100">
+                                    <li
+                                        class="grid grid-flow-row-dense grid-cols-1 lg:grid-cols-3 grid-rows-1 lg:gap-10">
+                                        <div class="tab-img">
+                                            <img src="/images/courses-04.jpg" alt="" class="w-full h-full object-cover">
+                                        </div>
+                                        <div class="col-span-2 py-5 lg:py-10">
+                                            <h4 class="font-open font-black text-xl mb-25">Creative Graphic Design
+                                            </h4>
+                                            <p class="font-open text-sm leading-25 text-darkgray">
+                                                You are not allowed to redistribute this template ZIP file on any
+                                                other website without a permission from us.
+                                            </p><br>
+                                            <p class="font-open text-sm leading-25 text-darkgray mb-5">
+                                                There are some unethical people on this world copied and reposted
+                                                our templates without any permission from us. Their Karma will hit
+                                                them really hard. Yeah!
+                                            </p>
+                                            <span class="span-detail">36 hours</span>
+                                            <span class="span-detail">4 weeks</span>
+                                            <span class="text-sm font-semibold">3 Certificates</span> <br>
+                                            <div class="btn mt-5">
+                                                <a href="#" class="text-purple font-open text-sm underline">Subscribe
+                                                    Course</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="sale py-140">
+    <section class="sale mt-140 py-140" id="page">
         <div class="container">
             <div class="lg:flex max-content lgscreen:px-5">
                 <div class="left-col w-full lg:w-1/2 flex justify-center">
@@ -159,7 +350,7 @@
 
     </section>
 
-    <section class="testimonials relative my-140 max-content">
+    <section class="testimonials relative my-140" id="testimonial">
         <div class="container">
             <div class="section-heading">
                 <h4 class="sub-heading text-center">TESTIMONIALS</h4>
@@ -167,44 +358,62 @@
             </div>
             <div class="testimonial-swiper">
                 <div class="swiper testimonialsSlider">
-                    <div class="swiper-wrapper mb-50">
+                    <div class="swiper-wrapper mb-100">
                         <div class="swiper-slide">
                             <div class="slide-content">
-                                <div class="content">
+                                <div class="content m-5px p-5 hover:shadow-custom">
                                     <p class="font-open text-base leading-25 italic">
-                                        “Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam
-                                        lorem.”
+                                        “just think about TemplateMo if you need free CSS templates for your website”
                                     </p>
+                                    <div class="name-info relative">
+                                        <h4 class="name font-open font-black text-xl mt-30">Catherine Walk</h4>
+                                        <span class="text-purple text-13 font-extrabold">CEO & Founder</span>
+                                        <img src="/images/quote.png" alt="" class="absolute top-0 right-0" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="slide-content">
-                                <div class="content">
+                                <div class="content m-5px p-5 hover:shadow-custom">
                                     <p class="font-open text-base leading-25 italic">
-                                        “Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam
-                                        lorem.”
+                                        “think about our website first when you need free HTML templates for your
+                                        website”
                                     </p>
+                                    <div class="name-info relative">
+                                        <h4 class="name font-open font-black text-xl mt-30">David Martin</h4>
+                                        <span class="text-purple text-13 font-extrabold">CTO of Tech Company</span>
+                                        <img src="/images/quote.png" alt="" class="absolute top-0 right-0" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="slide-content">
-                                <div class="content">
+                                <div class="content m-5px p-5 hover:shadow-custom">
                                     <p class="font-open text-base leading-25 italic">
-                                        “Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam
-                                        lorem.”
+                                        “just think about our website wherever you need free templates for your website”
                                     </p>
+                                    <div class="name-info relative">
+                                        <h4 class="name font-open font-black text-xl mt-30">Sophia Whity</h4>
+                                        <span class="text-purple text-13 font-extrabold">CEO and Co-Founder</span>
+                                        <img src="/images/quote.png" alt="" class="absolute top-0 right-0" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="slide-content">
-                                <div class="content">
+                                <div class="content m-5px p-5 hover:shadow-custom">
                                     <p class="font-open text-base leading-25 italic">
                                         “Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam
                                         lorem.”
                                     </p>
+                                    <div class="name-info relative">
+                                        <h4 class="name font-open font-black text-xl mt-30">Catherine Walk</h4>
+                                        <span class="text-purple text-13 font-extrabold">CEO & Founder</span>
+                                        <img src="/images/quote.png" alt="" class="absolute top-0 right-0" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -215,8 +424,104 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact relative pb-222 lg:pb-444" id="contact">
+        <div class="container">
+            <div class="">
+                <div class="map w-full max-w-[856px] rounded-[50px]">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7151.84524236698!2d-122.19494600413192!3d47.56605883252286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490695e625f8965%3A0xf99b055e76477def!2sNewcastle%20Beach%20Park%20Playground%2C%20Bellevue%2C%20WA%2098006%2C%20USA!5e0!3m2!1sen!2sth!4v1644335269264!5m2!1sen!2sth"
+                        width="100%" height="448px" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+                <div class="phone-mobile lg:flex lgscreen:justify-center lg:ml-[5%] lg:mt-[-30px]">
+                    <div
+                        class="rounded-xl bg-white shadow-xl p-5 flex items-center mx-3 max-w-[269px] w-full lgscreen:mt-5">
+                        <i class="fa-solid fa-phone text-white shadow-bg mr-15"></i>
+                        <div>
+                            <h4 class="name font-open font-black text-lg uppercase">PHONE</h4>
+                            <span class="text-15 text-purple font-bold">010-020-0340</span>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-xl bg-white shadow-xl p-5 flex items-center mx-3 max-w-[269px] w-full lgscreen:mt-5">
+                        <i class="fa-solid fa-phone text-white shadow-bg mr-15"></i>
+                        <div>
+                            <h4 class="name font-open font-black text-lg uppercase">PHONE</h4>
+                            <span class="text-15 text-purple font-bold">010-020-0340</span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="form bg-white p-5 lg:p-10 rounded-2xl shadow-custom lg:absolute mt-10 lg:top-0 lg:right-[12%]">
+                    <form action="#" method="post">
+                        <div class="section-heading">
+                            <h4 class="sub-heading">CONTACT US</h4>
+                            <h2 class="!text-left">Say <span>Hello</span></h2>
+                            <p
+                                class="mt-15 lg:mt-30 font-open text-sm leading-25 text-darkgray lg:max-w-[436px] mx-auto">
+                                IF you need a working contact form by PHP script, please visit TemplateMo's contact page
+                                for
+                                more info.
+                            </p>
+                        </div>
+                        <div class="form-fields">
+                            <form class="pb-5">
+                                <div class="form-group mb-6">
+                                    <input type="text"
+                                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                        id="exampleInput7" placeholder="Name">
+                                </div>
+                                <div class="form-group mb-6">
+                                    <input type="email"
+                                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                        id="exampleInput8" placeholder="Email address">
+                                </div>
+                                <div class="form-group mb-6">
+                                    <textarea class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                                id=" exampleFormControlTextarea13" rows="3" placeholder="Message"></textarea>
+                                </div>
+                                <a href="#" class="main-gradient-btn lg:float-right">
+                                    Join Us Now!
+                                </a>
+                            </form>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-part absolute bottom-10 left-0 right-0">
+                    <ul class="social-icons flex justify-center space-x-5">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-dribbble"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="copyright">
+                        <p class="mt-30 text-center font-open text-sm leading-25 text-white max-w-[436px] mx-auto">
+                            Copyright ©
+                            <script>document.write(new Date().getFullYear()); </script> EduWell Co. Ltd. All Rights
+                            Reserved.
+                            <br>Design by: <a href="#" target="_blank">Snehal </a>
+                        </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -282,7 +587,8 @@
             },
         });
     </script>
-
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
         integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

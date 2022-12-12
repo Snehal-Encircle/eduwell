@@ -4,20 +4,28 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        smscreen: { max: '539px' },
         mdscreen: { max: '767px' },
         lgscreen: { max: '1024px' },
         midscreen: { min: '1200px' },
+        bigscreen: { min: '1500px'},
       },
 
       fontFamily: {
         'open': 'Open Sans, sans-serif',
       },
 
+      borderWidth: {
+        3: '3px',
+      },
+
       fontSize: {
         10: '10px',
         13: '13px',
+        15: '15px',
         17: '17px',
         28: '28px',
+        30: '30px',
         50: '50px',
         62: '62px',
         64: '64px',
@@ -31,10 +39,12 @@ module.exports = {
 
       width: {
         10: '10px',
+        44: '44px',
       },
 
       height: {
         10: '10px',
+        44: '44px',
       },
 
       minHeight: {
@@ -54,20 +64,27 @@ module.exports = {
       },
 
       margin: {
+        '5px': '5px',
         15: '15px',
+        25: '25px',
         30: '30px',
         42: '42px',
         50: '50px',
         60: '60px',
+        100: '100px',
         140: '140px',
       },
 
       padding: {
+        '10px': '10px',
+        15: '15px',
         30: '30px',
         50: '50px',
         30: '30px',
         70: '70px',
         140: '140px',
+        222: '222px',
+        444: '444px'
       }
     },
   },
