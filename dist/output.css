@@ -622,8 +622,7 @@ h2 {
 
 @media (max-width: 1024px) {
   .container {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding: 1.25rem;
   }
 }
 
@@ -1012,10 +1011,6 @@ h2 {
 
 .overflow-auto {
   overflow: auto;
-}
-
-.overflow-hidden {
-  overflow: hidden;
 }
 
 .overflow-y-auto {
@@ -1417,12 +1412,6 @@ h2 {
   transition-duration: 150ms;
 }
 
-.transition-transform {
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .delay-700 {
   transition-delay: 700ms;
 }
@@ -1439,20 +1428,8 @@ h2 {
   transition-duration: 300ms;
 }
 
-.duration-500 {
-  transition-duration: 500ms;
-}
-
-.duration-1000 {
-  transition-duration: 1000ms;
-}
-
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.ease-linear {
-  transition-timing-function: linear;
 }
 
 .shadow-bg {
@@ -1536,6 +1513,13 @@ h2 {
   .right-banner::after {
     content: var(--tw-content);
     top: 0px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .right-banner::after {
+    content: var(--tw-content);
+    margin-right: -10%;
   }
 }
 
@@ -1780,6 +1764,30 @@ h2 span {
   overflow: auto;
 }
 
+.cources-tab::before {
+  position: absolute;
+  left: 8%;
+  top: -140px;
+  z-index: -1;
+  height: 231px;
+  width: 291px;
+  background-image: url('/images/our-courses-left-dec.png');
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.cources-tab::after {
+  position: absolute;
+  right: 8%;
+  top: -140px;
+  z-index: -1;
+  height: 231px;
+  width: 291px;
+  background-image: url('/images/our-courses-right-dec.png');
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -1800,6 +1808,11 @@ h2 span {
   top: -90px;
 }
 
+.before\:left-\[8\%\]::before {
+  content: var(--tw-content);
+  left: 8%;
+}
+
 .before\:z-\[-1\]::before {
   content: var(--tw-content);
   z-index: -1;
@@ -1818,6 +1831,11 @@ h2 span {
 .before\:w-full::before {
   content: var(--tw-content);
   width: 100%;
+}
+
+.before\:w-\[291px\]::before {
+  content: var(--tw-content);
+  width: 291px;
 }
 
 .before\:max-w-\[291px\]::before {
@@ -1885,6 +1903,11 @@ h2 span {
   bottom: 0px;
 }
 
+.after\:right-\[8\%\]::after {
+  content: var(--tw-content);
+  right: 8%;
+}
+
 .after\:z-\[-1\]::after {
   content: var(--tw-content);
   z-index: -1;
@@ -1918,6 +1941,11 @@ h2 span {
 .after\:w-full::after {
   content: var(--tw-content);
   width: 100%;
+}
+
+.after\:w-\[291px\]::after {
+  content: var(--tw-content);
+  width: 291px;
 }
 
 .after\:max-w-\[214px\]::after {
@@ -2102,10 +2130,6 @@ h2 span {
     width: 50%;
   }
 
-  .lg\:max-w-\[636px\] {
-    max-width: 636px;
-  }
-
   .lg\:max-w-\[516px\] {
     max-width: 516px;
   }
@@ -2196,6 +2220,10 @@ h2 span {
     justify-content: center;
   }
 
+  .lgscreen\:p-5 {
+    padding: 1.25rem;
+  }
+
   .lgscreen\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -2208,6 +2236,11 @@ h2 span {
   .lgscreen\:after\:ml-\[-20\%\]::after {
     content: var(--tw-content);
     margin-left: -20%;
+  }
+
+  .lgscreen\:after\:mr-\[-10\%\]::after {
+    content: var(--tw-content);
+    margin-right: -10%;
   }
 }
 

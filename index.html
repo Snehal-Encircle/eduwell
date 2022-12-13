@@ -19,21 +19,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
     <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="/css/animate.css">
     <title>EduWell</title>
 </head>
 
 <body>
-    <!-- fixed overflow-hidden top-0 w-full z-50 transition-transform ease-linear -->
     <header class="header">
         <div class="heder-menu bg-header flex items-center justify-around font-open">
             <div class="container">
                 <div class="header-row">
-                    <div class="main-nav flex justify-between">
+                    <div class="main-nav flex justify-between wow fadeInLeft">
                         <a href="index.html">
                             <img src="/images/logo.png" alt="" />
                         </a>
                         <ul
-                            class="nav hidden lg:flex items-center float-right relative z-50 transition-all delay-1000 space-x-16 text-white text-sm">
+                            class="wow fadeInLeft nav hidden lg:flex items-center float-right relative z-50 transition-all delay-1000 space-x-16 text-white text-sm">
                             <li><a href="#home">Home</a></li>
                             <li><a href="#service">Service</a></li>
                             <li><a href="#cource">Courses</a></li>
@@ -51,7 +51,7 @@
         </div>
 
     </header>
-    <!-- menu -->
+    <!-- responsive menu -->
     <div class="offcanvas offcanvas-top fixed bottom-0 flex flex-col max-w-full bg-white invisible bg-clip-padding shadow-sm outline-none transition duration-300 ease-in-out text-gray-700 top-0 left-0 right-0 border-none h-1/2 max-h-full"
         tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
         <div class="offcanvas-header flex items-center justify-end px-10 py-10">
@@ -62,7 +62,7 @@
         </div>
         <div class="offcanvas-body flex-grow p-4 overflow-y-auto flex justify-center items-center">
             <ul
-                class="nav flex flex-col items-center z-50 transition-all delay-200 font-open text-sm space-y-5 text-black hover:text-purple">
+                class="wow fadeInUp nav flex flex-col items-center z-50 transition-all delay-200 font-open text-sm space-y-5 text-black hover:text-purple">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#service">Service</a></li>
                 <li><a href="#cource">Courses</a></li>
@@ -76,8 +76,7 @@
     <section class="banner pt-70 relative max-content" id="home">
         <div class="container">
             <div class="row lg:flex justify-between relative lgscreen:text-center">
-                <div
-                    class="left-banner lg:justify-center flex flex-col lg:max-w-[636px] animate__animated animate__fadeInLeft animate__delay-1s">
+                <div class="left-banner lg:justify-center flex flex-col lg:max-w-[636px wow fadeInLeft">
                     <h6 class="text-17 font-medium text-gray-400">Welcome To Our School</h6>
                     <h1 class="text-50 lg:text-64 font-black mb-42">
                         Best Place To Learn Graphic <span class="text-purple">Design!</span>
@@ -86,8 +85,7 @@
                         Join Us Now!
                     </a>
                 </div>
-                <div
-                    class="right-banner lgscreen:flex lgscreen:justify-center lg:float-right lg:max-w-[516px] animate__animated animate__fadeInRight animate__delay-1s">
+                <div class="right-banner lgscreen:flex lgscreen:justify-center lg:float-right lg:max-w-[516px] wow fadeInRight">
                     <img src="/images/banner-right-image.png" alt="">
                 </div>
             </div>
@@ -96,13 +94,13 @@
 
     <section class="service mt-140 max-content" id="service">
         <div class="container">
-            <div class="section-heading animate__animated animate__fadeInUp">
+            <div class="section-heading wow fadeInUp">
                 <h4 class="sub-heading text-center">OUR Services</h4>
                 <h2>Provided <span>Services</span> </h2>
             </div>
             <div class="swiper serviceSlider">
                 <div class="swiper-wrapper mb-50">
-                    <div class="swiper-slide animate__animated animate__fadeInUp">
+                    <div class="swiper-slide wow fadeInUp">
                         <div class="slide-content">
                             <div class="img">
                                 <img src="/images/service-icon-01.png" alt="">
@@ -114,7 +112,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide animate__animated animate__fadeInUp">
+                    <div class="swiper-slide wow fadeInUp">
                         <div class="slide-content">
                             <div class="img">
                                 <img src="/images/service-icon-02.png" alt="">
@@ -125,7 +123,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide animate__animated animate__fadeInUp">
+                    <div class="swiper-slide wow fadeInUp">
                         <div class="slide-content">
                             <div class="img">
                                 <img src="/images/service-icon-03.png" alt="">
@@ -136,7 +134,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide animate__animated animate__fadeInUp">
+                    <div class="swiper-slide wow fadeInUp">
                         <div class="slide-content">
                             <div class="img">
                                 <img src="/images/service-icon-04.png" alt="">
@@ -153,9 +151,9 @@
         </div>
     </section>
 
-    <section class="cources-tab mt-140" id="cource">
+    <section class="cources-tab mt-140 relative" id="cource">
         <div class="container">
-            <div class="section-heading animate__animated animate__fadeInUp">
+            <div class="section-heading wow fadeInUp ">
                 <h4 class="sub-heading text-center">OUR COURSES</h4>
                 <h2>What You Can <span>Learn</span> </h2>
                 <p class="text-center mt-30 font-open text-sm leading-25 text-darkgray max-w-[500px] mx-auto">You just
@@ -163,9 +161,9 @@
             </div>
             <div class="tab-contents">
                 <div class="tabs lg:flex flex-wrap">
-                    <div class="w-full lg:w-3/12 custom-flex space-y-10">
-                        <ul class="nav nav-tabs flex flex-col flex-wrap list-none space-y-7 animate__animated animate__fadeInUp"
-                            id="tabs-tabVertical" role="tablist">
+                    <div class="w-full lg:w-3/12 custom-flex space-y-10 wow fadeInUp">
+                        <ul class="nav nav-tabs flex flex-col flex-wrap list-none space-y-7" id="tabs-tabVertical"
+                            role="tablist">
                             <li class="tab-box border-3 border-purple text-black rounded-md py-15 px-30"
                                 role="presentation">
                                 <a href="#tab-web" class="text-xl font-bold font-open flex justify-center active"
@@ -192,7 +190,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="w-full lg:w-9/12 flex items-center lgscreen:mt-5 animate__animated animate__fadeInUp">
+                    <div class="w-full lg:w-9/12 flex items-center lgscreen:mt-5 wow fadeInUp">
                         <div class="tab-content" id="tabs-tabContentVertical">
                             <div class="tab-pane fade show active" id="tab-web" role="tabpanel"
                                 aria-labelledby="tab-web-vertical">
@@ -328,10 +326,10 @@
     <section class="sale mt-140 py-140" id="page">
         <div class="container">
             <div class="lg:flex max-content lgscreen:px-5">
-                <div class="left-col w-full lg:w-1/2 flex justify-center">
+                <div class="left-col w-full lg:w-1/2 flex justify-center wow fadeInUp">
                     <img src="/images/sale-left-image.png" alt="">
                 </div>
-                <div class="right-col w-full lg:w-1/2 flex flex-col justify-center">
+                <div class="right-col w-full lg:w-1/2 flex flex-col justify-center wow fadeInUp">
                     <h4 class="sub-heading text-white text-17 font-medium mt-3">Get the sale right now!</h4>
                     <h2
                         class="font-open !normal-case text-left text-50 leading-60 lg:text-62 lg:leading-74 text-white font-black">
@@ -352,13 +350,13 @@
 
     <section class="testimonials relative my-140" id="testimonial">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading wow fadeInUp">
                 <h4 class="sub-heading text-center">TESTIMONIALS</h4>
                 <h2>What They <span>Think</span></h2>
             </div>
             <div class="testimonial-swiper">
                 <div class="swiper testimonialsSlider">
-                    <div class="swiper-wrapper mb-100">
+                    <div class="swiper-wrapper mb-100 wow fadeInUp">
                         <div class="swiper-slide">
                             <div class="slide-content">
                                 <div class="content m-5px p-5 hover:shadow-custom">
@@ -427,24 +425,24 @@
     <section class="contact relative pb-222 lg:pb-444" id="contact">
         <div class="container">
             <div class="">
-                <div class="map w-full max-w-[856px] rounded-[50px]">
+                <div class="map w-full max-w-[856px] rounded-[50px] wow fadeInUp">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7151.84524236698!2d-122.19494600413192!3d47.56605883252286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490695e625f8965%3A0xf99b055e76477def!2sNewcastle%20Beach%20Park%20Playground%2C%20Bellevue%2C%20WA%2098006%2C%20USA!5e0!3m2!1sen!2sth!4v1644335269264!5m2!1sen!2sth"
                         width="100%" height="448px" frameborder="0" allowfullscreen=""></iframe>
                 </div>
                 <div class="phone-mobile lg:flex lgscreen:justify-center lg:ml-[5%] lg:mt-[-30px]">
                     <div
-                        class="rounded-xl bg-white shadow-xl p-5 flex items-center mx-3 max-w-[269px] w-full lgscreen:mt-5">
+                        class="rounded-xl bg-white shadow-xl p-5 flex items-center mx-3 max-w-[269px] w-full lgscreen:mt-5 wow fadeInUp">
                         <i class="fa-solid fa-phone text-white shadow-bg mr-15"></i>
-                        <div>
+                        <div class="wow fadeInUp">
                             <h4 class="name font-open font-black text-lg uppercase">PHONE</h4>
                             <span class="text-15 text-purple font-bold">010-020-0340</span>
                         </div>
                     </div>
                     <div
-                        class="rounded-xl bg-white shadow-xl p-5 flex items-center mx-3 max-w-[269px] w-full lgscreen:mt-5">
+                        class="rounded-xl bg-white shadow-xl p-5 flex items-center mx-3 max-w-[269px] w-full lgscreen:mt-5 wow fadeInUp">
                         <i class="fa-solid fa-phone text-white shadow-bg mr-15"></i>
-                        <div>
+                        <div class="wow fadeInUp">
                             <h4 class="name font-open font-black text-lg uppercase">PHONE</h4>
                             <span class="text-15 text-purple font-bold">010-020-0340</span>
                         </div>
@@ -453,7 +451,7 @@
                 <div
                     class="form bg-white p-5 lg:p-10 rounded-2xl shadow-custom lg:absolute mt-10 lg:top-0 lg:right-[12%]">
                     <form action="#" method="post">
-                        <div class="section-heading">
+                        <div class="section-heading wow fadeInUp">
                             <h4 class="sub-heading">CONTACT US</h4>
                             <h2 class="!text-left">Say <span>Hello</span></h2>
                             <p
@@ -465,17 +463,17 @@
                         </div>
                         <div class="form-fields">
                             <form class="pb-5">
-                                <div class="form-group mb-6">
+                                <div class="form-group mb-6 wow fadeInUp">
                                     <input type="text"
                                         class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                                         id="exampleInput7" placeholder="Name">
                                 </div>
-                                <div class="form-group mb-6">
+                                <div class="form-group mb-6 wow fadeInUp">
                                     <input type="email"
                                         class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                                         id="exampleInput8" placeholder="Email address">
                                 </div>
-                                <div class="form-group mb-6">
+                                <div class="form-group mb-6 wow fadeInUp">
                                     <textarea class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
                                 id=" exampleFormControlTextarea13" rows="3" placeholder="Message"></textarea>
                                 </div>
@@ -487,7 +485,7 @@
                     </form>
                 </div>
                 <div class="footer-part absolute bottom-10 left-0 right-0">
-                    <ul class="social-icons flex justify-center space-x-5">
+                    <ul class="social-icons flex justify-center space-x-5 wow fadeInUp">
                         <li>
                             <a href="#">
                                 <i class="fa-brands fa-facebook-f"></i>
@@ -509,7 +507,7 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="copyright">
+                    <div class="copyright wow fadeInUp">
                         <p class="mt-30 text-center font-open text-sm leading-25 text-white max-w-[436px] mx-auto">
                             Copyright ©
                             <script>document.write(new Date().getFullYear()); </script> EduWell Co. Ltd. All Rights
@@ -592,6 +590,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
         integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

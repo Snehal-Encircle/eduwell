@@ -20,7 +20,7 @@
 
 @layer components {
     .container {
-        @apply mx-auto lgscreen:px-5
+        @apply mx-auto lgscreen:p-5
     }
     .heder-menu {
         @apply bg-[url('/images/header-bg.png')] bg-no-repeat object-cover lg:min-h-[110px] h-full bg-center relative transition-all delay-700
@@ -60,7 +60,7 @@
         @apply relative mt-5 text-darkblack font-black leading-74 mb-10 font-open after:absolute after:content-[''] after:w-full after:max-w-[214px] after:h-[429px] after:bg-[url('/images/banner-left-dec.png')] lgscreen:after:ml-[-20%] after:left-0 lg:after:left-[-50%] after:mb-[-267px] after:bottom-[-240px] after:z-[-1] after:bg-no-repeat
     }
     .right-banner {
-        @apply after:w-full after:max-w-[378px] after:h-[378px] right-0 bigscreen:after:right-[-11%] after:z-[-1] after:absolute after:content-[''] after:bg-[url('/images/banner-right-dec.png')] after:top-96 lg:after:top-0 after:bg-no-repeat
+        @apply after:w-full after:max-w-[378px] after:h-[378px] lgscreen:after:mr-[-10%] right-0 bigscreen:after:right-[-11%] after:z-[-1] after:absolute after:content-[''] after:bg-[url('/images/banner-right-dec.png')] after:top-96 lg:after:top-0 after:bg-no-repeat
     }
 
     .custom-gradient {
@@ -136,10 +136,13 @@
 
     .scrollspy-example {
         @apply relative overflow-auto
-        /* position: relative;
-        height: 200px;
-        overflow: auto; */
     }
     
-    
+    .cources-tab {
+        @apply before:absolute before:content-[''] before:bg-[url('/images/our-courses-left-dec.png')] before:left-[8%] before:top-[-140px] before:w-[291px] before:h-[231px] before:z-[-1]
+    }
+
+    .cources-tab {
+        @apply after:absolute after:content-[''] after:bg-[url('/images/our-courses-right-dec.png')] after:right-[8%] after:top-[-140px] after:w-[291px] after:h-[231px] after:z-[-1]
+    }
 }
