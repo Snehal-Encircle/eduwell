@@ -1,4 +1,4 @@
 # eduwell
 
 
-preview link: eduwell-template.netlify.app
+preview link: https://eduwell-template.netlify.app/
